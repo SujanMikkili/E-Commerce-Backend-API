@@ -12,13 +12,12 @@ refunds, inventory reservation, and admin return/product management.
 This project implements the backend business logic for an e-commerce
 marketplace with three main roles:
 
--   **Customer** -- browse products, manage cart and addresses, place
-    orders, make payments, cancel orders, and request item-level
-    returns.
--   **Seller** -- create and manage products and maintain seller/store
-    information.
--   **Admin** -- manage product approvals/rejections, administer return
-    requests, process refunds, and update the admin profile.
+-   **Customer** -- browse approved products, manage cart and addresses, place orders, make payments, cancel orders, and request item-level returns.
+
+-   **Seller** -- has the same shopping capabilities as a customer and can additionally create, manage, update, and delete their own products and maintain seller/store information.
+
+-   **Admin** -- manage product approvals/rejections, administer return requests, process refunds, and update the admin profile.
+
 
 The application is organized as a FastAPI application with separate
 routers for authentication, registration, users, products, cart, orders,
